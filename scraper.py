@@ -20,4 +20,5 @@ if r.status_code == 200:
         content_encode = bytes(content.encode())
         file = open(f" poem {index}", "wb")
         file.write(content_encode)
+        file.close()
     
